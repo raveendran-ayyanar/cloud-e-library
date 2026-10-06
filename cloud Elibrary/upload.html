@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Upload Material - Cloud E-Library</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            ☁️ <span>Cloud</span> E-Library
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="library.html">Library</a>
+            <a href="index.html#categories">Categories</a>
+            <a href="upload.html">Upload</a>
+            <a href="login.html" class="login-btn">Login</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Upload Header -->
+
+    <section class="upload-header">
+
+        <p>SHARE KNOWLEDGE</p>
+
+        <h1>Upload Study Material</h1>
+
+        <span>
+            Add educational resources to your digital library.
+        </span>
+
+    </section>
+
+
+    <!-- Upload Form -->
+
+    <section class="upload-section">
+
+        <div class="upload-container">
+
+            <div class="upload-icon">
+                ☁️
+            </div>
+
+            <h2>Upload Your Material</h2>
+
+            <p class="upload-description">
+                Upload books, notes, question papers and other
+                educational resources.
+            </p>
+
+
+            <form id="uploadForm">
+
+
+                <!-- Title -->
+
+                <div class="form-group">
+
+                    <label for="title">
+                        Material Title
+                    </label>
+
+                    <input
+                        type="text"
+                        id="title"
+                        placeholder="Enter material title"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Category -->
+
+                <div class="form-group">
+
+                    <label for="category">
+                        Category
+                    </label>
+
+                    <select id="category" required>
+
+                        <option value="">
+                            Select Category
+                        </option>
+
+                        <option value="ebook">
+                            E-Book
+                        </option>
+
+                        <option value="notes">
+                            Notes
+                        </option>
+
+                        <option value="question-paper">
+                            Question Paper
+                        </option>
+
+                        <option value="programming">
+                            Programming
+                        </option>
+
+                        <option value="cloud">
+                            Cloud Computing
+                        </option>
+
+                        <option value="ai">
+                            AI & ML
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Author -->
+
+                <div class="form-group">
+
+                    <label for="author">
+                        Author / Uploaded By
+                    </label>
+
+                    <input
+                        type="text"
+                        id="author"
+                        placeholder="Enter author name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Description -->
+
+                <div class="form-group">
+
+                    <label for="description">
+                        Description
+                    </label>
+
+                    <textarea
+                        id="description"
+                        placeholder="Enter a short description"
+                        rows="4"
+                    ></textarea>
+
+                </div>
+
+
+                <!-- File -->
+
+                <div class="form-group">
+
+                    <label>
+                        Select File
+                    </label>
+
+                    <div class="file-box">
+
+                        <input
+                            type="file"
+                            id="file"
+                            accept=".pdf,.doc,.docx,.ppt,.pptx"
+                            required
+                        >
+
+                        <p>
+                            📁 PDF, DOC, DOCX, PPT or PPTX
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Upload Button -->
+
+                <button
+                    type="submit"
+                    class="upload-button"
+                >
+                    ☁️ Upload Material
+                </button>
+
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="footer-logo">
+            ☁️ Cloud E-Library
+        </div>
+
+        <p>
+            Store • Learn • Access
+        </p>
+
+        <p>
+            © 2026 Cloud E-Library
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

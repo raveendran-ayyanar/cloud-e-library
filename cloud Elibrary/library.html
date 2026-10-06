@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Library - Cloud E-Library</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            ☁️ <span>Cloud</span> E-Library
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="library.html">Library</a>
+            <a href="index.html#categories">Categories</a>
+            <a href="upload.html">Upload</a>
+            <a href="login.html" class="login-btn">Login</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Library Header -->
+
+    <section class="library-header">
+
+        <p>EXPLORE OUR COLLECTION</p>
+
+        <h1>Digital Library</h1>
+
+        <span>
+            Find books, notes and educational materials
+            stored in our cloud library.
+        </span>
+
+    </section>
+
+
+    <!-- Search -->
+
+    <section class="library-search">
+
+        <input
+            type="text"
+            id="librarySearch"
+            placeholder="Search books, notes, subjects..."
+        >
+
+        <button onclick="searchMaterials()">
+            🔍 Search
+        </button>
+
+    </section>
+
+
+    <!-- Category Filter -->
+
+    <div class="library-categories">
+
+        <button onclick="filterBooks('all')">All</button>
+
+        <button onclick="filterBooks('ebook')">
+            📚 E-Books
+        </button>
+
+        <button onclick="filterBooks('notes')">
+            📄 Notes
+        </button>
+
+        <button onclick="filterBooks('paper')">
+            📝 Question Papers
+        </button>
+
+        <button onclick="filterBooks('programming')">
+            💻 Programming
+        </button>
+
+        <button onclick="filterBooks('cloud')">
+            ☁️ Cloud
+        </button>
+
+    </div>
+
+
+    <!-- Materials -->
+
+    <section class="library-materials">
+
+        <div class="library-card ebook programming">
+
+            <div class="material-icon">
+                🐍
+            </div>
+
+            <div class="material-content">
+
+                <span>PROGRAMMING</span>
+
+                <h2>Python Programming</h2>
+
+                <p>
+                    Python programming basics,
+                    concepts and examples.
+                </p>
+
+                <div class="material-buttons">
+
+                    <button>
+                        👁 View
+                    </button>
+
+                    <button>
+                        📥 Download
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="library-card notes cloud">
+
+            <div class="material-icon">
+                ☁️
+            </div>
+
+            <div class="material-content">
+
+                <span>CLOUD COMPUTING</span>
+
+                <h2>Cloud Computing</h2>
+
+                <p>
+                    Learn cloud computing concepts,
+                    services and architecture.
+                </p>
+
+                <div class="material-buttons">
+
+                    <button>
+                        👁 View
+                    </button>
+
+                    <button>
+                        📥 Download
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="library-card notes">
+
+            <div class="material-icon">
+                🗄️
+            </div>
+
+            <div class="material-content">
+
+                <span>DATABASE</span>
+
+                <h2>DBMS Notes</h2>
+
+                <p>
+                    Database management system
+                    notes and important concepts.
+                </p>
+
+                <div class="material-buttons">
+
+                    <button>
+                        👁 View
+                    </button>
+
+                    <button>
+                        📥 Download
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="library-card paper">
+
+            <div class="material-icon">
+                📝
+            </div>
+
+            <div class="material-content">
+
+                <span>QUESTION PAPER</span>
+
+                <h2>Computer Networks</h2>
+
+                <p>
+                    Previous year computer networks
+                    examination papers.
+                </p>
+
+                <div class="material-buttons">
+
+                    <button>
+                        👁 View
+                    </button>
+
+                    <button>
+                        📥 Download
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="library-card ebook">
+
+            <div class="material-icon">
+                🤖
+            </div>
+
+            <div class="material-content">
+
+                <span>AI & ML</span>
+
+                <h2>Machine Learning</h2>
+
+                <p>
+                    Introduction to machine learning
+                    and artificial intelligence.
+                </p>
+
+                <div class="material-buttons">
+
+                    <button>
+                        👁 View
+                    </button>
+
+                    <button>
+                        📥 Download
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="library-card notes">
+
+            <div class="material-icon">
+                🔐
+            </div>
+
+            <div class="material-content">
+
+                <span>CYBER SECURITY</span>
+
+                <h2>Network Security</h2>
+
+                <p>
+                    Network security concepts,
+                    threats and protection.
+                </p>
+
+                <div class="material-buttons">
+
+                    <button>
+                        👁 View
+                    </button>
+
+                    <button>
+                        📥 Download
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="footer-logo">
+            ☁️ Cloud E-Library
+        </div>
+
+        <p>
+            Store • Learn • Access
+        </p>
+
+        <p>
+            © 2026 Cloud E-Library
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

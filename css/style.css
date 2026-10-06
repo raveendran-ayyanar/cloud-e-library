@@ -1,0 +1,908 @@
+/* =========================================
+   CLOUD E-LIBRARY - MAIN STYLE
+========================================= */
+
+/* ---------- GLOBAL ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f8fc;
+    color: #172033;
+    min-width: 320px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    width: 100%;
+    min-height: 70px;
+    padding: 0 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #ffffff;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #374151;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+
+/* =========================================
+   HOME PAGE
+========================================= */
+
+.hero {
+    width: 100%;
+    min-height: 600px;
+
+    padding: 80px 7%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #eff6ff,
+        #ffffff
+    );
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+.search-box {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    display: flex;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 15px 20px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 8px 0 0 8px;
+
+    font-size: 16px;
+    outline: none;
+}
+
+.search-box button {
+    padding: 15px 25px;
+
+    border: none;
+    border-radius: 0 8px 8px 0;
+
+    background: #2563eb;
+    color: white;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.features {
+    width: 86%;
+    max-width: 1200px;
+
+    margin: 50px auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================================
+   SECTION TITLE
+========================================= */
+
+.section-title {
+    width: 86%;
+    max-width: 1200px;
+
+    margin: 70px auto 30px;
+
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #64748b;
+}
+
+
+/* =========================================
+   CATEGORY CARDS
+========================================= */
+
+.categories {
+    width: 86%;
+    max-width: 1200px;
+
+    margin: 0 auto 70px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.category-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* =========================================
+   POPULAR MATERIALS
+========================================= */
+
+.popular-materials {
+    width: 86%;
+    max-width: 1200px;
+
+    margin: 0 auto 70px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.material-card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.material-card h3 {
+    margin-bottom: 10px;
+}
+
+.material-card p {
+    color: #64748b;
+}
+
+
+/* =========================================
+   CLOUD SECTION
+========================================= */
+
+.cloud-section {
+    width: 86%;
+    max-width: 1200px;
+
+    margin: 0 auto 70px;
+
+    padding: 60px 40px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    background: #2563eb;
+
+    color: white;
+}
+
+.cloud-section h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.cloud-section p {
+    font-size: 17px;
+}
+
+
+/* =========================================
+   LIBRARY PAGE
+========================================= */
+
+.library-header {
+    width: 86%;
+    max-width: 1200px;
+
+    margin: 60px auto 30px;
+
+    text-align: center;
+}
+
+.library-header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.library-header p {
+    color: #64748b;
+}
+
+.library-search {
+    width: 86%;
+    max-width: 700px;
+
+    margin: 30px auto;
+
+    display: flex;
+}
+
+.library-search input {
+    width: 100%;
+
+    padding: 14px 18px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 16px;
+}
+
+.library-categories {
+    width: 86%;
+    max-width: 1200px;
+
+    margin: 30px auto;
+
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+.library-categories button {
+    padding: 10px 18px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background: #e5edff;
+
+    color: #2563eb;
+
+    cursor: pointer;
+}
+
+.library-materials {
+    width: 86%;
+    max-width: 1200px;
+
+    margin: 40px auto 70px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.library-card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.material-icon {
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.material-content h3 {
+    margin-bottom: 10px;
+}
+
+.material-content p {
+    color: #64748b;
+
+    margin-bottom: 20px;
+}
+
+.material-buttons {
+    display: flex;
+
+    gap: 10px;
+}
+
+.material-buttons a,
+.material-buttons button {
+    padding: 10px 15px;
+
+    border-radius: 7px;
+
+    border: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   UPLOAD PAGE
+========================================= */
+
+.upload-header {
+    text-align: center;
+
+    padding: 60px 20px 20px;
+}
+
+.upload-header h1 {
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+.upload-header p {
+    color: #64748b;
+}
+
+.upload-section {
+    padding: 20px 20px 70px;
+}
+
+.upload-container {
+    width: 100%;
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    padding: 40px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.upload-icon {
+    text-align: center;
+
+    font-size: 50px;
+
+    margin-bottom: 15px;
+}
+
+.upload-description {
+    text-align: center;
+
+    color: #64748b;
+
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: 600;
+
+    color: #374151;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 15px;
+}
+
+.form-group textarea {
+    min-height: 120px;
+
+    resize: vertical;
+}
+
+.file-box {
+    padding: 20px;
+
+    border: 2px dashed #cbd5e1;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.upload-button {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.upload-button:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================================
+   LOGIN PAGE
+========================================= */
+
+.login-section {
+    min-height: 75vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 60px 20px;
+}
+
+.login-container {
+    width: 100%;
+
+    max-width: 430px;
+
+    margin: 0 auto;
+
+    padding: 40px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+}
+
+.login-icon {
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+.login-container h1 {
+    margin-bottom: 8px;
+
+    font-size: 30px;
+}
+
+.login-subtitle {
+    color: #64748b;
+
+    margin-bottom: 30px;
+}
+
+.login-form {
+    text-align: left;
+}
+
+.login-form .form-group {
+    margin-bottom: 20px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    outline: none;
+}
+
+.login-options {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+
+    font-size: 14px;
+}
+
+.remember {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+}
+
+.forgot-password {
+    color: #2563eb;
+}
+
+.login-submit {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.register-link {
+    margin-top: 25px;
+
+    color: #64748b;
+}
+
+.register-link a {
+    color: #2563eb;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   REGISTER PAGE
+========================================= */
+
+.register-section {
+    min-height: 75vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 60px 20px;
+}
+
+.register-container {
+    width: 100%;
+
+    max-width: 450px;
+
+    margin: 0 auto;
+
+    padding: 40px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+}
+
+.register-icon {
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+.register-container h1 {
+    margin-bottom: 8px;
+
+    font-size: 30px;
+}
+
+.register-subtitle {
+    color: #64748b;
+
+    margin-bottom: 30px;
+}
+
+.register-form {
+    text-align: left;
+}
+
+.register-form .form-group {
+    margin-bottom: 18px;
+}
+
+.register-form input {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    outline: none;
+}
+
+.register-submit {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-top: 8px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.login-link {
+    margin-top: 25px;
+
+    color: #64748b;
+}
+
+.login-link a {
+    color: #2563eb;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    width: 100%;
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+    background: #172033;
+
+    color: white;
+
+    margin-top: 30px;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .features,
+    .categories,
+    .popular-materials,
+    .library-materials {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 15px 5%;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 60px 5%;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .search-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-box input {
+        border-radius: 8px;
+    }
+
+    .search-box button {
+        border-radius: 8px;
+    }
+
+    .features,
+    .categories,
+    .popular-materials,
+    .library-materials {
+        width: 90%;
+
+        grid-template-columns: 1fr;
+    }
+
+    .library-header,
+    .library-materials,
+    .library-categories {
+        width: 90%;
+    }
+
+    .upload-container,
+    .login-container,
+    .register-container {
+        padding: 30px 20px;
+    }
+
+    .login-options {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+
+}

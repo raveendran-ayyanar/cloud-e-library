@@ -1,0 +1,248 @@
+/* =========================================
+   LIBRARY PAGE
+   ========================================= */
+
+.library-header {
+    text-align: center;
+    padding: 80px 20px 50px;
+    background: #f8fbff;
+}
+
+.library-header p {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.library-header h1 {
+    font-size: 48px;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+.library-header span {
+    color: #64748b;
+}
+
+
+/* Library Search */
+
+.library-search {
+    max-width: 750px;
+    margin: 35px auto 25px;
+
+    display: flex;
+
+    background: white;
+
+    padding: 7px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.library-search input {
+    flex: 1;
+
+    border: none;
+
+    outline: none;
+
+    padding: 14px;
+
+    font-size: 15px;
+}
+
+.library-search button {
+    border: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 0 25px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+
+
+/* Categories */
+
+.library-categories {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin: 25px 20px 50px;
+}
+
+.library-categories button {
+    border: 1px solid #dbe3ef;
+
+    background: white;
+
+    padding: 10px 18px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    color: #475569;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.library-categories button:hover {
+    background: #2563eb;
+
+    color: white;
+
+    border-color: #2563eb;
+}
+
+
+/* Library Cards */
+
+.library-materials {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 0 20px 90px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.library-card {
+    display: flex;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+.library-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 30px rgba(15, 23, 42, 0.1);
+}
+
+.material-icon {
+    min-width: 150px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #eaf2ff;
+
+    font-size: 55px;
+}
+
+.material-content {
+    padding: 25px;
+}
+
+.material-content > span {
+    color: #2563eb;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.material-content h2 {
+    font-size: 20px;
+
+    margin: 7px 0;
+}
+
+.material-content p {
+    color: #64748b;
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+}
+
+.material-buttons {
+    display: flex;
+
+    gap: 10px;
+}
+
+.material-buttons button {
+    border: 1px solid #dbe3ef;
+
+    background: white;
+
+    padding: 8px 13px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    color: #2563eb;
+}
+
+.material-buttons button:hover {
+    background: #2563eb;
+
+    color: white;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .library-header h1 {
+        font-size: 36px;
+    }
+
+    .library-search {
+        margin: 25px 20px;
+    }
+
+    .library-materials {
+        grid-template-columns: 1fr;
+    }
+
+    .library-card {
+        flex-direction: column;
+    }
+
+    .material-icon {
+        height: 130px;
+    }
+
+}
