@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Cloud E-Library</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 
 <body>
 
     <!-- Navigation Bar -->
     <nav class="navbar">
-        <div class="logo">☁️ Cloud E-Library</div>
+        <div class="logo">☁️ <span>Cloud</span> E-Library</div>
 
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="library.html">Library</a></li>
-            <li><a href="#">Categories</a></li>
+            <li><a href="index.html#categories">Categories</a></li>
             <li><a href="upload.html">Upload</a></li>
             <li><a href="login.html" class="active">Login</a></li>
         </ul>
@@ -37,7 +38,7 @@
                 Login to access your Cloud E-Library
             </p>
 
-            <form class="login-form">
+            <form class="login-form" method="POST">
 
                 <div class="form-group">
                     <label for="email">Email Address</label>
@@ -66,7 +67,7 @@
                         Remember me
                     </label>
 
-                    <a href="#" class="forgot-password">
+                    <a href="#" class="forgot-password" onclick="alert('Password reset instructions will be sent to your registered email.'); return false;">
                         Forgot Password?
                     </a>
 
@@ -92,6 +93,8 @@
     <footer class="footer">
         <p>© 2026 Cloud E-Library | All Rights Reserved</p>
     </footer>
+
+    <script src="../js/script.js"></script>
 
 </body>
 </html>

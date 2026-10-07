@@ -7,7 +7,8 @@
 
     <title>Library - Cloud E-Library</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/library.css">
 </head>
 
 <body>
@@ -20,9 +21,9 @@
             ☁️ <span>Cloud</span> E-Library
         </div>
 
-        <nav>
+        <nav class="nav-links">
             <a href="index.html">Home</a>
-            <a href="library.html">Library</a>
+            <a href="library.html" class="active">Library</a>
             <a href="index.html#categories">Categories</a>
             <a href="upload.html">Upload</a>
             <a href="login.html" class="login-btn">Login</a>
@@ -55,6 +56,7 @@
             type="text"
             id="librarySearch"
             placeholder="Search books, notes, subjects..."
+            onkeypress="if(event.key==='Enter'){searchMaterials();}"
         >
 
         <button onclick="searchMaterials()">
@@ -68,25 +70,25 @@
 
     <div class="library-categories">
 
-        <button onclick="filterBooks('all')">All</button>
+        <button class="filter-btn active" onclick="filterBooks('all', this)">All</button>
 
-        <button onclick="filterBooks('ebook')">
+        <button class="filter-btn" onclick="filterBooks('ebook', this)">
             📚 E-Books
         </button>
 
-        <button onclick="filterBooks('notes')">
+        <button class="filter-btn" onclick="filterBooks('notes', this)">
             📄 Notes
         </button>
 
-        <button onclick="filterBooks('paper')">
+        <button class="filter-btn" onclick="filterBooks('paper', this)">
             📝 Question Papers
         </button>
 
-        <button onclick="filterBooks('programming')">
+        <button class="filter-btn" onclick="filterBooks('programming', this)">
             💻 Programming
         </button>
 
-        <button onclick="filterBooks('cloud')">
+        <button class="filter-btn" onclick="filterBooks('cloud', this)">
             ☁️ Cloud
         </button>
 
@@ -305,7 +307,7 @@
 
     <!-- Footer -->
 
-    <footer>
+    <footer class="footer">
 
         <div class="footer-logo">
             ☁️ Cloud E-Library
@@ -322,7 +324,7 @@
     </footer>
 
 
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 
 </body>
 

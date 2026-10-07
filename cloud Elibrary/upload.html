@@ -7,7 +7,8 @@
 
     <title>Upload Material - Cloud E-Library</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/upload.css">
 </head>
 
 <body>
@@ -20,11 +21,11 @@
             ☁️ <span>Cloud</span> E-Library
         </div>
 
-        <nav>
+        <nav class="nav-links">
             <a href="index.html">Home</a>
             <a href="library.html">Library</a>
             <a href="index.html#categories">Categories</a>
-            <a href="upload.html">Upload</a>
+            <a href="upload.html" class="active">Upload</a>
             <a href="login.html" class="login-btn">Login</a>
         </nav>
 
@@ -64,7 +65,7 @@
             </p>
 
 
-            <form id="uploadForm">
+            <form id="uploadForm" class="upload-form" method="POST" enctype="multipart/form-data">
 
 
                 <!-- Title -->
@@ -208,7 +209,7 @@
 
     <!-- Footer -->
 
-    <footer>
+    <footer class="footer">
 
         <div class="footer-logo">
             ☁️ Cloud E-Library
@@ -225,7 +226,7 @@
     </footer>
 
 
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 
 </body>
 

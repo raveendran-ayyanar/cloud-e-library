@@ -7,7 +7,7 @@
 
     <title>Cloud E-Library</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -20,8 +20,8 @@
             ☁️ <span>Cloud</span> E-Library
         </div>
 
-        <nav>
-            <a href="index.html">Home</a>
+        <nav class="nav-links">
+            <a href="index.html" class="active">Home</a>
             <a href="library.html">Library</a>
             <a href="#categories">Categories</a>
             <a href="upload.html">Upload</a>
@@ -56,10 +56,12 @@
 
                 <input
                     type="text"
+                    id="heroSearch"
                     placeholder="Search books, notes, question papers..."
+                    onkeypress="if(event.key==='Enter'){window.location.href='library.html?search='+encodeURIComponent(this.value);}"
                 >
 
-                <button>🔍 Search</button>
+                <button onclick="window.location.href='library.html?search='+encodeURIComponent(document.getElementById('heroSearch').value)">🔍 Search</button>
 
             </div>
 
@@ -68,17 +70,17 @@
 
             <div class="features">
 
-                <div>
+                <div class="feature-card">
                     ☁️
                     <span>Cloud Storage</span>
                 </div>
 
-                <div>
+                <div class="feature-card">
                     📚
                     <span>Study Materials</span>
                 </div>
 
-                <div>
+                <div class="feature-card">
                     🔒
                     <span>Secure Access</span>
                 </div>
@@ -107,44 +109,44 @@
         </div>
 
 
-        <div class="category-grid">
+        <div class="categories category-grid">
 
-            <div class="category-card">
+            <div class="category-card" onclick="window.location.href='library.html?category=ebook'" style="cursor: pointer;">
                 <div class="icon">📚</div>
                 <h3>E-Books</h3>
                 <p>Digital books and reference materials</p>
             </div>
 
 
-            <div class="category-card">
+            <div class="category-card" onclick="window.location.href='library.html?category=notes'" style="cursor: pointer;">
                 <div class="icon">📄</div>
                 <h3>Notes</h3>
                 <p>Subject notes and study materials</p>
             </div>
 
 
-            <div class="category-card">
+            <div class="category-card" onclick="window.location.href='library.html?category=paper'" style="cursor: pointer;">
                 <div class="icon">📝</div>
                 <h3>Question Papers</h3>
                 <p>Previous examination papers</p>
             </div>
 
 
-            <div class="category-card">
+            <div class="category-card" onclick="window.location.href='library.html?category=programming'" style="cursor: pointer;">
                 <div class="icon">💻</div>
                 <h3>Programming</h3>
                 <p>Programming books and tutorials</p>
             </div>
 
 
-            <div class="category-card">
+            <div class="category-card" onclick="window.location.href='library.html?category=cloud'" style="cursor: pointer;">
                 <div class="icon">☁️</div>
                 <h3>Cloud Computing</h3>
                 <p>Cloud technology resources</p>
             </div>
 
 
-            <div class="category-card">
+            <div class="category-card" onclick="window.location.href='library.html?category=ai'" style="cursor: pointer;">
                 <div class="icon">🤖</div>
                 <h3>AI & ML</h3>
                 <p>Artificial intelligence resources</p>
@@ -157,7 +159,7 @@
 
     <!-- Popular Materials -->
 
-    <section class="materials">
+    <section class="popular-materials materials">
 
         <div class="section-title">
 
@@ -175,11 +177,11 @@
         <div class="book-grid">
 
 
-            <div class="book-card">
+            <div class="book-card material-card">
 
-                <div class="book-icon">🐍</div>
+                <div class="book-icon material-icon">🐍</div>
 
-                <div class="book-info">
+                <div class="book-info material-content">
 
                     <span>PROGRAMMING</span>
 
@@ -190,18 +192,18 @@
                         study material.
                     </p>
 
-                    <button>View Material →</button>
+                    <button onclick="window.location.href='library.html'">View Material →</button>
 
                 </div>
 
             </div>
 
 
-            <div class="book-card">
+            <div class="book-card material-card">
 
-                <div class="book-icon">☁️</div>
+                <div class="book-icon material-icon">☁️</div>
 
-                <div class="book-info">
+                <div class="book-info material-content">
 
                     <span>CLOUD</span>
 
@@ -212,18 +214,18 @@
                         cloud computing.
                     </p>
 
-                    <button>View Material →</button>
+                    <button onclick="window.location.href='library.html'">View Material →</button>
 
                 </div>
 
             </div>
 
 
-            <div class="book-card">
+            <div class="book-card material-card">
 
-                <div class="book-icon">🗄️</div>
+                <div class="book-icon material-icon">🗄️</div>
 
-                <div class="book-info">
+                <div class="book-info material-content">
 
                     <span>DATABASE</span>
 
@@ -234,7 +236,7 @@
                         study materials.
                     </p>
 
-                    <button>View Material →</button>
+                    <button onclick="window.location.href='library.html'">View Material →</button>
 
                 </div>
 
@@ -279,7 +281,7 @@
 
     <!-- Footer -->
 
-    <footer>
+    <footer class="footer">
 
         <div class="footer-logo">
             ☁️ Cloud E-Library
@@ -295,6 +297,7 @@
 
     </footer>
 
+    <script src="../js/script.js"></script>
 
 </body>
 
